@@ -143,8 +143,6 @@ The AI is instructed not to make unsupported promises about pricing, availabilit
 9. Configure a compatible error workflow if required.
 10. Test the full process using email accounts you control before publishing.
 
-**Important:** The workflow template does not include live credentials or personal configuration details.
-
 ## Testing and Validation
 
 The workflow has been deployed and its primary approved-response path has been tested successfully using a controlled inquiry.
@@ -177,22 +175,6 @@ Checks for inquiries that remain in Pending Approval or Sending longer than conf
 
 These companion workflows are not bundled in the main workflow JSON and must be configured separately.
 
-## Limitations and Future Improvements
-
-This project is designed as a portfolio-ready functional prototype.
-
-Potential improvements include:
-
-- Replacing Google Sheets with PostgreSQL for stronger transaction control and uniqueness constraints
-- Adding timestamps for more accurate status monitoring
-- Building a centralized lead management dashboard
-- Supporting WhatsApp Business inquiries
-- Adding automatic project categorization and priority scoring
-- Improving multi-user approval and escalation processes
-- Expanding automated test coverage
-
-Google Sheets-based duplicate checks are not atomic, so overlapping executions may still create duplicate records.
-
 ## Security
 
 The publicly shared workflow is a sanitized template.
@@ -206,11 +188,3 @@ Users must configure their own accounts and credentials after importing the work
 **Deployed, functional prototype**
 
 The core approved-email workflow has been demonstrated successfully. Additional reliability testing and production hardening remain possible improvements.
-
-## Author
-
-Developed as a practical AI automation and systems integration project.
-
-## License
-
-Add a license file if you choose to permit public reuse or modification of this workflow.
